@@ -1,0 +1,288 @@
+/* common */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  
+    width: calc(100% - 32px);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  header h1 {
+    color:rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    line-height: 50px;
+  }
+  header nav {
+    list-style: none;
+    display: flex;
+    line-height: 50px;
+  }
+  
+  header li {
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0 10px;
+    align-items: center;
+  }
+  
+  header li:hover {
+    opacity: .8;
+    background: #eee;
+    cursor: pointer;
+  }
+  header a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* mainvisual */
+  .mainvisual img {
+    width: 100%;
+    object-fit: cover;
+  }
+  /* main */
+  main {
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    margin: 0 auto; 
+  }
+  .wrapper {
+    margin: 0;
+    padding: 100px 30px;
+    color: #fff;
+  
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper h1 {
+    padding: 24px;
+    margin: 0;
+    font-size: 30px;
+  }
+  .wrapper a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .wrapper p {
+    margin: 0;
+    padding: 16px;
+  }
+  .wrapper p:nth-child(3) {
+    font-size: 25px;
+    font-weight: bold;
+
+    transition: transform .3s;
+  }
+  .wrapper p:nth-child(3):hover {
+    transform: scale(1.1);
+  }
+
+  /* contactx */
+  #contact {
+    margin: 60px 0;
+    padding: 0 16px;
+    color:rgba(0, 0, 0, 0.7);
+  }
+  #contact h2 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  /* priceList */
+  #priceList {
+    width: 300px;
+    width: 500px;
+    background: #eee;
+    margin: 0 auto;
+  }
+  #priceList h2 {
+    font-size: 25px;
+    color:rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+  #priceList a {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.7);
+  }
+  #priceList .price {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 24px;
+  }
+  #priceList .price span {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+  }
+  /* about */
+  #about {
+    margin: 30px 0;
+    padding: 0 16px;
+    font-size: 16px;
+    color:rgba(0, 0, 0, 0.7);
+    line-height: 1.6;
+    margin: 50px 0;
+  }
+
+  /* recruit */
+  #recruit {
+    margin: 30px 0;
+    padding: 0 16px;
+    font-size: 16px;
+    color:rgba(0, 0, 0, 0.7);
+    line-height: 1.6;
+    margin-bottom: 100px;
+  }
+  #recruit a {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.7);
+  }
+  #recruit h3 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
+  #recruit p {
+    margin: 0;
+    padding: 8px 0;
+  }
+
+  footer {
+    height: 500px;
+    font-size: 8px;
+    color:rgba(0, 0, 0, 0.7);
+    background: #eee;
+  }
+  .footerImage {
+    height: 500px;
+  }
+  footer img {
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+
+    transition: transform .3s;
+  }
+  footer img:hover {
+    transform: scale(1.1);
+  }
+  footer .text {
+    padding: 16px;
+    background: #eee;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  footer h1 {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+@media (min-width: 950px) {
+  header h1 {
+    font-size: 30px;
+  }
+  /* main */
+  main {
+    width: calc(100% - 32px);
+    max-width: 800px;
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper {
+    margin: 0;
+    padding: 100px 30px;
+    position: absolute;
+    top: 200px;
+    color: #fff;
+  
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper h1 {
+    padding: 24px;
+    margin: 0;
+    font-size: 50px;
+  }
+  .wrapper p:nth-child(3) {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  /* contact */
+  #contact {
+    margin: 60px 0;
+    padding: 0 16px;
+    color:rgba(0, 0, 0, 0.7);
+  }
+  #contact h2 {
+    line-height: 1.6;
+    font-size: 40px;
+  }
+  #contact p {
+    margin: 16px 0;
+  }
+
+  /* priceList */
+  #priceList {
+    width: 600px;
+    padding: 60px;
+    margin-bottom: 60px;
+    margin: 0 auto;
+  }
+  #priceList h2 {
+    font-size: 30px;
+  }
+  #priceList .price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 600px;
+  }
+  #priceList .price span {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+  }
+  #priceList .left {
+    margin: 0;
+    padding: 0;
+  }
+  .left > p {
+    line-height: 1.6;
+    margin: 0;
+    padding: 10px 0;
+  }
+  .left > p + p {
+    border-top: 1px solid gray;
+  }
+  .right > p {
+    line-height: 1.6;
+    margin: 0;
+    padding: 10px 0;
+  }
+  .right > p + p {
+    border-top: 1px solid gray;
+  } 
+}
+
